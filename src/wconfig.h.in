@@ -192,7 +192,7 @@
 #define DEF_APPMENU_Y		         10
 
 /* calculate window edge resistance from edge resistance */
-#define WIN_RESISTANCE(x)	(((x)*20)/30)
+#define WIN_RESISTANCE(x)	(((x)*21)/30)
 
 /* Window level where icons reside */
 #define NORMAL_ICON_LEVEL WMNormalLevel
@@ -205,7 +205,7 @@
  * time exceeds this value, it is immediately finished. Useful for
  * moments of high-load. DO NOT set *_DELAY_{Z,T,F} to zero!
  */
-#define MAX_ANIMATION_TIME	         1
+#define MAX_ANIMATION_TIME	         0.5
 /* Zoom animation */
 #define MINIATURIZE_ANIMATION_FRAMES_Z   7
 #define MINIATURIZE_ANIMATION_STEPS_Z    16
@@ -222,9 +222,9 @@
 #define MINIATURIZE_ANIMATION_TWIST_F    0.5
 
 /* delays in ms...*/
-#define BALLOON_DELAY           1000 /* ...before balloon is shown */
-#define MENU_SELECT_DELAY       200  /* ...for menu item selection hysteresis */
-#define MENU_JUMP_BACK_DELAY    400  /* ...for jumpback of scrolled menus */
+#define BALLOON_DELAY           0 /* ...before balloon is shown */
+#define MENU_SELECT_DELAY       0  /* ...for menu item selection hysteresis */
+#define MENU_JUMP_BACK_DELAY    0  /* ...for jumpback of scrolled menus */
 
 /* animation speed constants */
 #define ICON_SLIDE_SLOWDOWN_UF	1
@@ -315,7 +315,7 @@
 #define CURSOR_BLINK_RATE	300
 
 /* how many pixels to move before dragging windows and other objects */
-#define MOVE_THRESHOLD	        5
+#define MOVE_THRESHOLD	        4
 #define HRESIZE_THRESHOLD	3
 
 #define MAX_WORKSPACENAME_WIDTH	64
@@ -351,10 +351,10 @@
 #define MIN_WINDOW_SIZE	          5   /* minimum size for windows */
 #define ICON_WIDTH                64  /* size of the icon window */
 #define ICON_HEIGHT               64
-#define ICON_BORDER_WIDTH         2
+#define ICON_BORDER_WIDTH         1
 #define MAX_ICON_WIDTH	          60  /* size of the icon pixmap */
 #define MAX_ICON_HEIGHT           48
-#define MAX_WORKSPACES            100
+#define MAX_WORKSPACES            64
 #define MAX_MENU_TEXT_LENGTH      512
 #define MAX_RESTART_ARGS          16
 #define MAX_DEAD_PROCESSES        128
