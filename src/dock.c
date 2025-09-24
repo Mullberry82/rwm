@@ -1322,6 +1322,7 @@ static WMenu *dockMenuCreate(WScreen *scr, int type)
 
 WDock *wDockCreate(WScreen *scr, int type, const char *name)
 {
+	type = WM_CLIP;
 	WDock *dock;
 	WAppIcon *btn;
 
